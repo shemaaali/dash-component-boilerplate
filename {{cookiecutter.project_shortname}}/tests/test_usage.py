@@ -18,8 +18,8 @@ def test_render_component(dash_duo):
     dash_duo.clear_input(my_component)
 
     # Send keys to the custom input.
-    my_component.send_keys('Hello dash')
+    my_component.send_keys('Predicting Reservation Status')
 
     # Wait for the text to equal, if after the timeout (default 10 seconds)
     # the text is not equal it will fail the test.
-    dash_duo.wait_for_text_to_equal('#output', 'You have entered Hello dash')
+    dash_duo.wait_for_text_to_equal('#output', 'Checked-Out And Canceled')
