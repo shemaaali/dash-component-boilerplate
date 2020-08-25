@@ -1,4 +1,4 @@
-import {{cookiecutter.project_shortname}}
+import {{predictckeeckedout.project_shortname}}
 import dash
 from dash.dependencies import Input, Output
 import dash_html_components as html
@@ -6,7 +6,7 @@ import dash_html_components as html
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
-    {{cookiecutter.project_shortname}}.{{cookiecutter.component_name}}(
+    {{predictckeeckedout.project_shortname}}.{{predictckeeckedout.component_name}}(
         id='input',
         value='my-value',
         label='my-label'
