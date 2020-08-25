@@ -1,5 +1,5 @@
-from .{{cookiecutter.component_name}} import {{cookiecutter.component_name}}
+from .{{predictcheckedout.component_name}} import {{predictcheckedout.component_name}}
 
 __all__ = [
-    "{{cookiecutter.component_name}}"
+    "{{predictcheckedout.component_name}}"
 ]
