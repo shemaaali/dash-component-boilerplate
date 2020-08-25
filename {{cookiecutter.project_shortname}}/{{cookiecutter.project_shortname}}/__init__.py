@@ -11,9 +11,9 @@ from ._imports_ import *
 from ._imports_ import __all__
 
 if not hasattr(_dash, 'development'):
-    print('Dash was not successfully imported. '
-          'Make sure you don\'t have a file '
-          'named \n"dash.py" in your current directory.', file=_sys.stderr)
+    print('Predicting Status:'
+          'Checked-Out'
+          'Canceled', file=_sys.stderr)
     _sys.exit(1)
 
 _basepath = _os.path.dirname(__file__)
@@ -31,16 +31,16 @@ _this_module = _sys.modules[__name__]
 
 _js_dist = [
     {
-        'relative_package_path': '{{cookiecutter.project_shortname}}.min.js',
-{% if cookiecutter.publish_on_npm == 'True' -%}
+        'relative_package_path': '{{predict checkedout.project_shortname}}.min.js',
+{% if predict checkedout.publish_on_npm == 'True' -%}
         'external_url': 'https://unpkg.com/{0}@{2}/{1}/{1}.min.js'.format(
             package_name, __name__, __version__),
 {%- endif %}
         'namespace': package_name
     },
     {
-        'relative_package_path': '{{cookiecutter.project_shortname}}.min.js.map',
-{% if cookiecutter.publish_on_npm == 'True' -%}
+        'relative_package_path': '{{predict checkedout.project_shortname}}.min.js.map',
+{% if predict checkedout.publish_on_npm == 'True' -%}
         'external_url': 'https://unpkg.com/{0}@{2}/{1}/{1}.min.js.map'.format(
             package_name, __name__, __version__),
 {%- endif %}
