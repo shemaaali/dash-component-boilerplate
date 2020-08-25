@@ -1,7 +1,7 @@
 /* eslint no-magic-numbers: 0 */
 import React, {Component} from 'react';
 
-import { {{cookiecutter.component_name}} } from '../lib';
+import { {{predictcheckedout.component_name}} } from '../lib';
 
 class App extends Component {
 
@@ -20,7 +20,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <{{cookiecutter.component_name}}
+                <{{predictcheckedout.component_name}}
                     setProps={this.setProps}
                     {...this.state}
                 />
