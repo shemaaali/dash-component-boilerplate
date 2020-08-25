@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
  * It renders an input with the property `value`
  * which is editable by the user.
  */
-export default class {{cookiecutter.component_name}} extends Component {
+export default class {{predictcheckedout.component_name}} extends Component {
     render() {
         const {id, label, setProps, value} = this.props;
 
@@ -35,9 +35,9 @@ export default class {{cookiecutter.component_name}} extends Component {
     }
 }
 
-{{cookiecutter.component_name}}.defaultProps = {};
+{{predictcheckedout.component_name}}.defaultProps = {};
 
-{{cookiecutter.component_name}}.propTypes = {
+{{predictcheckedout.component_name}}.propTypes = {
     /**
      * The ID used to identify this component in Dash callbacks.
      */
