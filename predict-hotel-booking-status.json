@@ -1,0 +1,20 @@
+{
+  "project_name": "predict hotel booking status",
+  "project_shortname": "{{ predict checkout.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+  "component_name": "{{ predict checkout.project_shortname.split('_')|map('capitalize')|join('') }}",
+  "r_prefix": "",
+  "author_name": "Shima Daoud(For package.json)",
+  "author_email": "shemaali8787@gmail.com(For package.json)",
+  "github_org": "",
+  "description": "Predicting Hotel Booking Status Whether Checkedout or Canceled",
+  "license": [
+    "MIT License",
+    "BSD License",
+    "ISC License",
+    "Apache Software License 2.0",
+    "GNU General Public License v3",
+    "Not open source"
+  ],
+  "publish_on_npm": true,
+  "install_dependencies": true
+}
