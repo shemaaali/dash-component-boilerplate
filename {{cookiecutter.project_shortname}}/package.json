@@ -1,16 +1,16 @@
 {
-  "name": "{{ cookiecutter.project_shortname }}",
+  "name": "{{ predictcheckedout.project_shortname }}",
   "version": "0.0.1",
-  "description": "{{ cookiecutter.description }}",
-{% if cookiecutter.github_org -%}
+  "description": "{{ predictcheckedout.description }}",
+{% if predictcheckedout.github_org -%}
   "repository": {
     "type": "git",
-    "url": "git://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.project_shortname.replace('_', '-') }}.git"
+    "url": "git://github.com/{{ predictcheckedout.github_org }}/{{ predictcheckedout.project_shortname.replace('_', '-') }}.git"
   },
   "bugs": {
-    "url": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.project_shortname.replace('_', '-') }}/issues"
+    "url": "https://github.com/{{predictcheckedout.github_org }}/{{predictcheckedout.project_shortname.replace('_', '-') }}/issues"
   },
-  "homepage": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.project_shortname.replace('_', '-') }}",
+  "homepage": "https://github.com/{{ predictcheckedout.github_org }}/{{ predictcheckedout.project_shortname.replace('_', '-') }}",
 {%- endif %}
   "main": "build/index.js",
   "scripts": {
@@ -18,13 +18,13 @@
     "validate-init": "python _validate_init.py",
     "prepublishOnly": "npm run validate-init",
     "build:js": "webpack --mode production",
-    "build:py_and_r": "dash-generate-components ./src/lib/components {{ cookiecutter.project_shortname }} -p package-info.json --r-prefix '{{ cookiecutter.r_prefix }}'",
+    "build:py_and_r": "dash-generate-components ./src/lib/components {{ predictcheckedout.project_shortname }} -p package-info.json --r-prefix '{{predictcheckedout.r_prefix }}'",
     "build:py_and_r-activated": "(. venv/bin/activate || venv\\scripts\\activate && npm run build:py_and_r)",
     "build": "npm run build:js && npm run build:py_and_r",
     "build:activated": "npm run build:js && npm run build:py_and_r-activated"
   },
-  "author": "{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>",
-  "license": "{% set _license_identifiers = {'MIT License': 'MIT','BSD License': 'BSD','ISC License': 'ISC','Apache Software License 2.0': 'Apache-2.0','GNU General Public License v3': 'GPL-3.0','Not open source': ''} %}{{ _license_identifiers[cookiecutter.license] }}",
+  "author": "{{ predictcheckedout.author_name }} <{{predictcheckedout.author_email }}>",
+  "license": "{% set _license_identifiers = {'MIT License': 'MIT','BSD License': 'BSD','ISC License': 'ISC','Apache Software License 2.0': 'Apache-2.0','GNU General Public License v3': 'GPL-3.0','Not open source': ''} %}{{ _license_identifiers[predictcheckedout.license] }}",
   "dependencies": {
     "ramda": "^0.26.1"
   },
