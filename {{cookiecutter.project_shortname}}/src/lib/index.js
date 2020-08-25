@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
-import {{cookiecutter.component_name}} from './components/{{cookiecutter.component_name}}.react';
+import {{predictcheckedout.component_name}} from './components/{{predictcheckedout.component_name}}.react';
 
 export {
-    {{cookiecutter.component_name}}
+    {{predictcheckedout.component_name}}
 };
